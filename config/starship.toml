@@ -20,7 +20,6 @@ style_root = 'black bold'
 format = '[$user]($style) '
 disabled = false
 show_always = true
-aliases = { "corpuser034g" = "matchai" }
 
 [hostname]
 ssh_only = false
@@ -33,3 +32,29 @@ style = "blue"
 read_only = " "
 truncation_length = 4
 truncate_to_repo = false
+
+# --- Python ---
+[python]
+symbol = " "
+style = "yellow"
+format = "[$symbol$version ($virtualenv)]($style) "
+detect_extensions = ["py"]
+detect_files = ["pyproject.toml", "requirements.txt", "Pipfile"]
+
+# --- Rust ---
+[rust]
+symbol = " "
+style = "red"
+format = "[$symbol$version]($style) "
+detect_files = ["Cargo.toml"]
+
+# --- Shell scripts ---
+[shell]
+disabled = false
+style = "green"
+format = "[$indicator]($style) "
+bash_indicator = "bash "
+zsh_indicator = "zsh "
+fish_indicator = "fish "
+nu_indicator = "nu "
+powershell_indicator = "pwsh "
