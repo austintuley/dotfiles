@@ -1,0 +1,59 @@
+# ------------------------------------------------------------
+# Dotfiles repo - minimal and intentional
+# ------------------------------------------------------------
+
+# OS / filesystem noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor / IDE noise
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+*.bak
+*.orig
+
+# Logs
+*.log
+
+# Shell history (never commit)
+.bash_history
+.zsh_history
+.lesshst
+
+# Secrets and keys (never commit)
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.asc
+*.gpg
+*.kbx
+*.kbx~
+*.pub
+
+# Tokens / env files
+.env
+.env.*
+*token*
+*secret*
+*apikey*
+*api_key*
+*credentials*
+
+# Local backup artifacts
+.dotfiles-backup/
+**/.dotfiles-backup/
+
+# Optional: local-only overrides
+local/
+local-*
+*.local
