@@ -35,6 +35,7 @@ dotfiles/
 │
 ├── install.sh
 └── README.md
+```
 
 ---
 
@@ -97,9 +98,11 @@ This prints every action without making changes.
 
 Before installing any file, the script backs up existing files to:
 
+```text
 ~/.dotfiles-backup/<timestamp>/
 ├── home/
 └── config/
+```
 
 The backup structure mirrors this repo.
 
