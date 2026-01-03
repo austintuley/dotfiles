@@ -1,4 +1,4 @@
-# Dotfiles
+# dotfiles
 
 Personal dotfiles for my Debian-based daily driver and lab systems.
 
