@@ -9,4 +9,4 @@ These reflect an evolving setup focused on:
 
 They are not intended as drop-in replacements, but as reference.
 
-For additional context and design notes, see `docs/philosophy.md`.
+For additional context and design notes, see `docs/decisions/philosophy.md`.
