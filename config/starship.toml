@@ -9,7 +9,7 @@ $git_metrics\
 $python\
 $rust\
 $fill\
-$cmd_duration\
+$cmd_duration $jobs $time\
 $line_break\
 $character"""
 
@@ -30,3 +30,10 @@ trim_at = '.'
 disabled = false
 
 
+#$jobs $time
+
+#[directory]
+#style = "blue"
+#read_only = " "
+#truncation_length = 4
+#truncate_to_repo = false
