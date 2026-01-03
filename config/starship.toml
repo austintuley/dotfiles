@@ -6,10 +6,12 @@ $git_branch\
 $git_state\
 $git_status\
 $git_metrics\
+$python\
+$rust\
 $fill\
-$cmd_duration $jobs $time\
+$cmd_duration\
 $line_break\
-character"""
+$character"""
 
 [fill]
 symbol = " "
@@ -27,34 +29,4 @@ format = '󰚌 [$hostname](bold red) '
 trim_at = '.'
 disabled = false
 
-[directory]
-style = "blue"
-read_only = " "
-truncation_length = 4
-truncate_to_repo = false
 
-# --- Python ---
-[python]
-symbol = " "
-style = "yellow"
-format = "[$symbol$version ($virtualenv)]($style) "
-detect_extensions = ["py"]
-detect_files = ["pyproject.toml", "requirements.txt", "Pipfile"]
-
-# --- Rust ---
-[rust]
-symbol = " "
-style = "red"
-format = "[$symbol$version]($style) "
-detect_files = ["Cargo.toml"]
-
-# --- Shell scripts ---
-[shell]
-disabled = false
-style = "green"
-format = "[$indicator]($style) "
-bash_indicator = "bash "
-zsh_indicator = "zsh "
-fish_indicator = "fish "
-nu_indicator = "nu "
-powershell_indicator = "pwsh "
