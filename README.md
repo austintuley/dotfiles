@@ -23,6 +23,7 @@ If it is auto-generated, noisy, or machine-specific, it does not.
 
 ## Repository Structure
 
+```text
 dotfiles/
 ├── home/
 │   ├── .bashrc
