@@ -66,5 +66,8 @@ echo "==> Installing config/"
 install_dir_items "$DOTFILES_DIR/config" "$HOME/.config" "config"
 
 echo
-echo "Done. Backups stored in: $BACKUP_DIR"
-echo "Tip: DRY_RUN=1 ./install.sh"
+if [[ "$DRY_RUN" == "1" ]]; then
+  echo "Dry run complete. No changes made."
+else
+  echo "Done. Backups stored in: $BACKUP_DIR"
+fi
